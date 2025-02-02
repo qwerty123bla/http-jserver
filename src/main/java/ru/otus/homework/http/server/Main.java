@@ -1,13 +1,11 @@
 package ru.otus.homework.http.server;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.nio.charset.StandardCharsets;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
+    // Домашнее задание:
+    // 1. Добавить логирование вместо sout
+    // 2. Доделать DELETE для продуктов. DELETE без ид удаляет все продукты, DELETE c ид удаляет конкретный продукт
+    // 3. * Доделать PUT для продуктов. По id из тела запроса находим соответствующий продукт и обновляем его поля
     public static void main(String[] args) {
         new HttpServer(8189).start();
 
